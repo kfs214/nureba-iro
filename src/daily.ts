@@ -48,7 +48,7 @@ function getValuesShouldNotifyFirst(): string[][] {
 function composeNotificationBody(values: string[][]): string {
   const composedRows = values.map(
     (row) =>
-      `${row[2] === "TRUE" ? "★ " : ""}${row[0]}の${row[1]}から${
+      `${row[2] === "TRUE" ? "★ " : ""}${row[0]}の「${row[1]}」から${
         row[3]
       }日が経過しました`
   );
